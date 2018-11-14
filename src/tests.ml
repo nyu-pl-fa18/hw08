@@ -53,7 +53,7 @@ let digit_test2 test_ctxt =
 let digit_test3 test_ctxt =
   assert_equal (10 |> BigNat.from_int |> digits) 2
 
-let digit_test3 test_ctxt =
+let digit_test4 test_ctxt =
   assert_equal (333 |> BigNat.from_int |> fac |> digits) 698
 
 let bi = BigInt.from_int n
@@ -272,16 +272,17 @@ let suite =
    "bn_test3" >:: bn_test3;
    "bn_test4" >:: bn_test4;
    "bn_test5" >:: bn_test5;
-   "bn_test6" >:: bn_test5;
-   "bn_test7" >:: bn_test5;
-   "bn_test8" >:: bn_test5;
-   "bn_test9" >:: bn_test5;
+   "bn_test6" >:: bn_test6;
+   "bn_test7" >:: bn_test7;
+   "bn_test8" >:: bn_test8;
+   "bn_test9" >:: bn_test9;
    "fac_test1" >:: fac_test1;
    "fac_test2" >:: fac_test2;
    "fac_test3" >:: fac_test3;
    "digit_test1" >:: digit_test1;
    "digit_test2" >:: digit_test2;
    "digit_test3" >:: digit_test3;
+   "digit_test4" >:: digit_test4;
    "bi_test1" >:: bi_test1;
    "bi_test2" >:: bi_test2;
    "bi_test3" >:: bi_test3;
